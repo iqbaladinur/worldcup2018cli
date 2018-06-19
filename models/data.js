@@ -1,5 +1,5 @@
 const fileSystem = require('fs');
-const db = './store/db.json';
+const db = __dirname+'/../store/db.json';
 const http = require('axios');
 const refreshData = ()=>{
     http.get('https://raw.githubusercontent.com/lsv/fifa-worldcup-2018/master/data.json')
