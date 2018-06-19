@@ -13,6 +13,7 @@ program
     .action(() => {
         models.refreshData();          
     });
+
 program
     .command('stadium')
     .alias('s')
@@ -20,6 +21,7 @@ program
     .action(() => {
         models.getStadiums();
     });
+
 program
     .command('channels')
     .alias('c')

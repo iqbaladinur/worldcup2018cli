@@ -1,8 +1,8 @@
 const store = require('./data');
-const Table = require('cli-table');
 const mainView  = require('./../views/tableView'); 
 const moment    = require('moment');
 
+/* function getStadiums will render stadiums name and details. */
 const getStadiums = () => {
     const tableConfig = {
         head: ['Stadium Name', 'City']
@@ -15,6 +15,7 @@ const getStadiums = () => {
     mainView.generateView(tableConfig, content,'STADIUMS LIST NAME');
 }
 
+/* function getTcChannels will render tv channels. */
 const getTvChannels = () => {
     const tableConfig = {
         head: ['Channel Name', 'Country', 'Iso2', 'Language']
@@ -32,6 +33,7 @@ const getTvChannels = () => {
     mainView.generateView(tableConfig, content, 'CHANNEL TV LIST');
 }
 
+/* function getTeams will render teams information. */
 const getTeams = () => {
     const tableConfig = {
         head:['No', 'Country', 'FIFA Code'],
@@ -49,6 +51,7 @@ const getTeams = () => {
     mainView.generateView(tableConfig, content, 'WORLD CUP TEAMS');
 }
 
+/* function getGroupsMatch will render all group match information */
 const getGroupsMatch = ()=>{
     /* groups match recap */
     const tableConfig = {
@@ -91,6 +94,10 @@ const getGroupsMatch = ()=>{
     });
 }
 
+/**
+ * function getMatchByGroupName will render match information based on a group name
+ * @param {string:a-h} groupName 
+ */
 const getMatchByGroupName = (groupName)=>{
     /* group matches detail */
     const tableConfigForMatch = {
