@@ -18,5 +18,9 @@
     "moment": "^2.22.2"
   },
   "preferGlobal": true,
-  "bin": "./index.js"
+  "bin": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iqbaladinur/worldcup2018cli.git"
+  }
 }
