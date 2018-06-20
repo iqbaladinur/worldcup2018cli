@@ -10,7 +10,7 @@ const refreshData = ()=>{
         .then((res) => {
             fileSystem.writeFileSync(db, JSON.stringify(res.data), 'utf8');
             console.info('');
-            console.info(" score is refrehed");
+            console.info(" score is refreshed");
         })
         .catch((err) => {
             console.info(err.message);
@@ -34,7 +34,7 @@ const getTeamById = (id)=>{
 }
 
 /**
- * function getteamName will return a string team name code.
+ * function getTeamName will return a string team name code.
  * @param {int} id 
  */
 const getTeamName = (id)=>{
@@ -56,7 +56,7 @@ const getChannelById = (id)=>{
 }
 
 /**
- * funtion getStadiumById will return object contains a stadium detail.
+ * function getStadiumById will return object contains a stadium detail.
  * @param {int} id 
  */
 const getStadiumById = (id)=>{

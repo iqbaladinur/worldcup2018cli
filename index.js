@@ -33,7 +33,7 @@ program
 program
     .command('teams')
     .alias('t')
-    .description('Get participans country information.')
+    .description('Get participant country information.')
     .action(() => {
         models.getTeams();
     });
