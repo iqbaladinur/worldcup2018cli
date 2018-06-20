@@ -118,7 +118,7 @@ const getMatchByGroupName = (groupName)=>{
         });
         mainView.generateView(tableConfigForMatch, groupMatchs, 'GROUP ' + groupName.toUpperCase());
     }else{
-        console.log("gorup does'nt exist.");
+        console.log("group doesn't exist.");
     }
 }
 
